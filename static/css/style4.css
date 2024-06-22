@@ -1,0 +1,98 @@
+body {
+    background-image:url("../images/g3.jpg");
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+.form-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 650px;
+    height: 600px;
+    border-radius: 15px;
+    background: #0f4294;
+    text-align: center;
+    font-family: "Bangers", cursive;
+    color: #60cf38; 
+    opacity: 0.8;
+    }
+    .shared-styles {
+        transform: translate(-50%, -50%);
+        width: 200px;
+        border-radius: 15px;
+        background: #06d439;
+        text-align: center;
+        font-family: "Bangers", cursive;
+        color: #000000;
+        opacity: 0.5;
+    }
+    #first, #second, #third {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 550px;
+        border-radius: 15px;
+        background: #53c303;
+        text-align: center;
+        font-family: "Bangers", cursive;
+        color: #000000;
+        opacity: 0.7;
+    }
+    
+    #first {
+        top:270px;
+        left: 330px;
+        height: 150px;
+    }
+    
+    #second {
+        top:400px;
+        left: 330px;
+        height: 70px;
+    }
+    
+    #third {
+        top: 500px;
+        left: 330px;
+        height: 70px;
+    }
+    .login-btn {
+        width: 50%;
+        padding: 10px;
+        background:linear-gradient(to right,#FF0000,#90EE90);
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        margin-top: 20px;
+
+      }
+      
+      .login-btn:hover,
+      .login-btn:active {
+      transform: scaleX(1.30);
+      background: linear-gradient(to right, #90EE90, #FF0000); 
+      cursor: pointer;
+      }
+      .input-field {
+        width: 60%;
+        height: 25px;
+        border: 3px solid #ccc;
+        border-radius: 5px;
+      }
+      
+      .input-field::placeholder {
+        color: rgb(148, 125, 125);
+        font-weight: bold;
+        font-family:"Abel", cursive;
+      }
+      .logout-icon1 {
+        position:absolute;
+        width: 35px;
+        right: 5px;
+        top:550px;
+      }
+      .he{
+        color: #0a0095;
+        font-weight: bolder;
+      }
