@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal 5: Irrigation Recommendation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style6.css') }}">
+    <script src="{{ url_for('static', filename='js/goal5.js') }}"></script>
+</head>
+<body>
+    <div class="form-box">
+        <a href="#" onclick="logout()">
+            <img src="{{ url_for('static', filename='images/home-icon.png') }}" alt="Add Symptom" class="logout-icon1">
+        </a>
+    <h4>Irrigation Recommendation</h4>
+    <form action="/goal5" method="POST" onsubmit="getRecommendation(); return false;">
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" class="input-field">
+        <label for="district">District:</label>
+        <input type="text" id="district" name="district" class="input-field">
+        <button type="submit" class="login-btn">Submit</button>
+    </form>
+    <div id="first" class="shared-styles">
+    <h3 class="he">Recommended Irrigation Type:</h4>
+    <div id="recommendation"></div></div>
+    <div id="second" class="shared-styles">
+    <h3  class="he">Benefits:</h3>
+    <div id="benefits"></div></div>
+    <div id="third" class="shared-styles" >
+    <h3 class="he">Advantages:</h3>
+    <div id="advantages"></div></div></div>
+</body>
+</html>

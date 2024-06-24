@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal 4</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style5.css') }}">
+    <script src="{{ url_for('static', filename='js/goal4.js') }}"></script>
+</head>
+<body>
+    <div class="form-box">
+        <a href="#" onclick="logout()">
+            <img src="{{ url_for('static', filename='images/home-icon.png') }}" alt="Add Symptom" class="logout-icon1">
+        </a>
+    <h4>Optimizing Groundwater Allocation for Different Purposes</h4>
+    <input type="text" id="total_annual_ground_water_recharge" class="input-field" placeholder="Enter Total Annual Ground Water Recharge">
+    <button onclick="predict()" class="login-btn">Predict</button>
+    <div id="first" class="shared-styles">
+    <div class="he">Retrieved data from the dataset:</div> 
+    <div id="retrievedData"></div>
+    </div>
+    <div id="second" class="shared-styles">
+    <div class="he">Prediction:</div>
+    <div id="prediction"></div>
+</div>
+<div id="third" class="shared-styles" >
+    <div class="he">Overview about the Prediction:</div>
+    <div id="predictionStatement"></div>
+</div>
+</body>
+</html>

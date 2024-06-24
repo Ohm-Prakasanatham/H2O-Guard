@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groundwater Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
+    <script src="{{ url_for('static', filename='js/goal1.js') }}"></script>
+</head>
+<body>
+    <div class="form-box">
+        <h4>Predicting Future Groundwater Availability</h4>
+        <input class="input-field" type="text" id="rainfall_input" class="textbox" placeholder="Recharge from rainfall During Monsoon Season">
+        <button onclick="predict()" class="login-btn">Predict</button>
+        <div id="first" class="shared-styles">
+            <div class="he">Retrieved data from the dataset:</div>
+            <div class="result-text" id="retrievedData"></div>
+        </div>
+        <div id="second" class="shared-styles">
+            <div class="he">Predicted Net Ground Water Availability for future use:</div>
+            <div class="result-text" id="prediction"></div>
+        </div>
+        <div id="third" class="shared-styles" >
+            <div class="he">Prediction Statement:</div>
+            <div class="result-text" id="predictionStatement"></div>
+        </div>
+        <a href="#" onclick="logout()">
+            <img src="{{ url_for('static', filename='images/home-icon.png') }}" alt="Add Symptom" class="logout-icon1">
+        </a>
+    </div>
+
+</body>
+</html>

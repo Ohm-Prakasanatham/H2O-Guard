@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter OTP</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style1.css') }}">
+</head>
+<body>
+    <div class="main-w3layouts wrapper">
+        <div class="main-agileinfo">
+          <div class="agileits-top">
+    <h1>Enter OTP</h1>
+    <form action="/validate-otp" method="POST">
+        <input type="hidden" name="email" value="{{ email }}">
+        <label for="otp" class="em">OTP:</label><br>
+        <input type="text" id="otp" name="otp" required><br>
+        <input type="submit" value="Login">
+    </form>
+    <div class="clear"> </div>
+</div>
+</div>
+</div>
+<ul class="colorlib-bubbles">
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+</div>
+</body>
+</html>

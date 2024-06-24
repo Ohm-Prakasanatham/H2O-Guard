@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal 3</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style4.css') }}">
+    <script src="{{ url_for('static', filename='js/goal3.js') }}"></script>
+</head>
+<body>
+    <div class="form-box">
+        <a href="#" onclick="logout()">
+            <img src="{{ url_for('static', filename='images/home-icon.png') }}" alt="Add Symptom" class="logout-icon1">
+        </a>
+    <h4>Estimating Impact of Climate Variability on Groundwater Resources</h4>
+    <input type="text" class="input-field" id="rainfall_input" placeholder="Enter Rainfall During Monsoon Season">
+    <button onclick="predict()" class="login-btn">Predict</button>
+
+    <div id="first" class="shared-styles">
+    <div class="he">Retrieved data from the dataset:</div>   
+    <div id="retrievedData"></div></div>
+    <div id="second" class="shared-styles">
+    <div class="he">Prediction:</div>
+    <div id="prediction"></div>
+</div>
+<div id="third" class="shared-styles" >
+    <div class="he">Overview about the Prediction:</div>
+    <div id="predictionStatement"></div>
+    </div></div>
+
+</body>
+</html>
+

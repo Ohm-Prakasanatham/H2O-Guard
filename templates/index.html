@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect Buttons</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style1.css') }}">
+<script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</head>
+<body>
+  <div class="main-w3layouts wrapper">
+    <div class="main-agileinfo">
+      <div class="agileits-top">
+        <h1>H2O Guard</h1>
+    <button onclick="redirect('/goal1')" class="login-btn">Groundwater Predict</button><br>
+    <button onclick="redirect('/goal2')" class="login-btn">Sustain Check</button><br>
+    <button onclick="redirect('/goal3')" class="login-btn">Climate Impact</button><br>
+    <button onclick="redirect('/goal4')" class="login-btn">Opti Allocate</button><br>
+    <button onclick="redirect('/goal5')" class="login-btn">AquaSmart</button><br>
+    <div class="logout_btn"><button onclick="logout()" class="log_out">Logout</button>
+      <a href="#" onclick="logout()">
+        <img src="{{ url_for('static', filename='images/logout.png') }}" alt="Add Symptom" class="logout-icon1">
+      </a>
+     </div>
+            <div class="clear"> </div>
+          </div>
+      </div>
+    </div>
+    <ul class="colorlib-bubbles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+</body>
+</html>
